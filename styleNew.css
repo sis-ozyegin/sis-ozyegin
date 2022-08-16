@@ -1,0 +1,7 @@
+.notPencere{
+    visibility: hidden;
+    z-index: 10000000;
+}
+body{
+    zoom:110%;
+}

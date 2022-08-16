@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabloStyle.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <table class="">
+          <tr>
+            <td class="">2020 - 2021 Güz PREP Tam</td>
+            <td class="">İngilizce Hazırlık</td>
+            <td class="">ENG</td>
+            <td class="">A2</td>
+            <td class="">M11</td>
+            <td class="">0.00</td>
+            <td class="">B</td>
+            <td class="">2020-2021 Bahar</td>
+            <td class=""><a href="" onclick="openNotEkran2()">Detaylar...</a></td>
+            <td class=""><a href="" onclick="openGradeBook2()">Detaylar...</a></td>
+            <td class=""></td>
+          </tr>
+          <tr>
+            <td class="">2020 - 2021 Güz UG Tam_1</td>
+            <td class="">Lisans</td>
+            <td class="">SEC</td>
+            <td class="">101P</td>
+            <td class="">B</td>
+            <td class="">1.00</td>
+            <td class="">B</td>
+            <td class="">2021- 2022 Bahar</td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+          </tr>
+        </table>
+        <script>
+          function openNotEkran(){
+            window.parent.document.getElementById('notEkran').style.visibility='visible';
+          }
+          function openNotEkran2(){
+            window.parent.document.getElementById('notEkran').style.visibility='visible';
+            window.parent.document.getElementById('11').innerHTML='27/01/2021 15:51';
+            window.parent.document.getElementById('12').innerHTML='S';
+          }
+          function openGradeBook(){
+            window.parent.document.getElementById('gradeBook').style.visibility='visible';
+          }
+          function openGradeBook2(){
+            window.parent.document.getElementById('gradeBook').style.visibility='visible';
+            window.parent.document.getElementById('2.11').innerHTML='- Final Grade';
+            window.parent.document.getElementById('2.21').innerHTML='&emsp;- Eligible to take LAT';
+            window.parent.document.getElementById('2.31').innerHTML='&emsp;&emsp;Attendance';
+            window.parent.document.getElementById('2.41').innerHTML='&emsp;CPG';
+            window.parent.document.getElementById('2.51').innerHTML='&emsp;MCD';
+            window.parent.document.getElementById('2.61').innerHTML='&emsp;- LAT';
+            window.parent.document.getElementById('2.71').innerHTML='&emsp;&emsp;LAT Reading';
+            window.parent.document.getElementById('2.81').innerHTML='&emsp;&emsp;LAT Listening';
+            window.parent.document.getElementById('2.91').innerHTML='&emsp;&emsp;LAT Language';
+            window.parent.document.getElementById('2.101').innerHTML='&emsp;&emsp;LAT Writing';
+            window.parent.document.getElementById('2.111').innerHTML='&emsp;- BONUS';
+
+            window.parent.document.getElementById('2.12').innerHTML='76';
+            window.parent.document.getElementById('2.23').innerHTML='Evet';
+            window.parent.document.getElementById('2.33').innerHTML='Evet';
+            window.parent.document.getElementById('2.42').innerHTML='10';
+            window.parent.document.getElementById('2.52').innerHTML='25';
+            window.parent.document.getElementById('2.62').innerHTML='83';
+            window.parent.document.getElementById('2.72').innerHTML='97';
+            window.parent.document.getElementById('2.82').innerHTML='90';
+            window.parent.document.getElementById('2.92').innerHTML='82';
+            window.parent.document.getElementById('2.102').innerHTML='63';
+            window.parent.document.getElementById('2.112').innerHTML='3';
+          }
+
+        </script>
+</body>
+</html>

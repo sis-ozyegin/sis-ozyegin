@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btnTranskript{
+    background-color: #42b8dd;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    margin:2px 0;
+}
+.baslik{
+    background-color: #3376ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+}
+.solBaslik{
+    display: flex;
+    flex-direction: row;
+}
+.icon{
+    padding: 0 5px;
+}
+.tabloBaslik table{
+    background-color: #e8e8e8;
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabloBaslik table td{
+    width: 12%;
+}
+.bolge{
+    border: 2px solid #bababa;
+    height: 250px;
+}
+.icerikTablosu{
+    width: 100%;
+}
+.icerikTablosu td{
+    width: 12%;
+}
+.icerikTablosu tr{
+    cursor: pointer;
+}
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.tabloBaslik .t2{
+    background-color: #e8e8e8;
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabloBaslik .t2 td{
+    width: 9%;
+}
+tr{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    height: 20px;
+}
+.pencere{
+    width: 100%;
+    height: 200px;
+}
+.icerikTablosu tr:hover{
+    background-color: #cce5ff;
+}
+.col-md-5, .col-md-7{
+    margin: 0!important;
+    padding: 0!important;
+}
+.col-md-5 h4{
+    margin-top: 10px;
+}
+.ucuncuBolge{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+}
+.altBolge{
+    height: 150px!important;
+}
+.ucuncuBolge .col-md-5{
+    font-size: 13px;
+}
+.solAltBaslik td{
+    width: 14%!important;
+}
+.pencere2{
+    width: 100%;
+    height: 80px;
+}
+.notEkran{
+    width: 800px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -400px;
+    background-color: #e1edfe;
+    position: fixed;
+    border: 1px solid #b1c3d9;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.icerikTablosu2,.icerikTablosu2 td{
+    width: 100%;
+    /*border: 1px solid #e7e7e7;
+    border-collapse: collapse;*/
+}
+.icerikTablosu2 td{
+    width: 50%;
+}
+.gradeBook{
+    width: 800px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -400px;
+    background-color: #e1edfe;
+    position: fixed;
+    border: 1px solid #b1c3d9;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.icerikTablosu3,.icerikTablosu3 td{
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    border-collapse: collapse;
+}
+.icerikTablosu3 td{
+    width: 33.3%;
+}

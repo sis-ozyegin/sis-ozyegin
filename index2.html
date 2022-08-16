@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIS - Ozyegin University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <input type="button" class="btnTranskript" value="Transkript">
+    <div class="bolge">
+        <div class="baslik">
+            <div class="solBaslik">
+                <div class="icon">
+                    <i class="fa-solid fa-table-cells"></i>
+                </div>
+                <div>
+                    Dönemler
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-rotate"></i>
+            </div>
+        </div>
+        <div class="tabloBaslik">
+            <table class="">
+                  <tr>
+                    <td class="">Dönem Kodu</td>
+                    <td class="">Yarıyıl</td>
+                    <td class="">Öğrenci Durumu</td>
+                    <td class="">Kayıt Durumu</td>
+                    <td class="">Düzey</td>
+                    <td class="">Sınıf</td>
+                    <td class="">Akademik Durum</td>
+                    <td class="">Azami Ders Yükü(Kredi)</td>
+                  </tr>
+                </table>
+        </div>
+        <div class="">
+            <table class="icerikTablosu">
+                  <tr onclick="row1()">
+                    <td class="">2021 - 2022 Bahar</td>
+                    <td class="">2</td>
+                    <td class="">Süresi İçinde</td>
+                    <td class="">Kayıtlı</td>
+                    <td class="">Lisans</td>
+                    <td class="">1.Sınıf</td>
+                    <td class="">Geçti</td>
+                    <td class="">36</td>
+                  </tr>
+                  <tr onclick="row2()">
+                    <td class="">2021 - 2022 Güz</td>
+                    <td class="">1</td>
+                    <td class="">Süresi İçinde</td>
+                    <td class="">Kayıtlı</td>
+                    <td class="">Lisans</td>
+                    <td class="">1.Sınıf</td>
+                    <td class="">Geçti</td>
+                    <td class="">36</td>
+                  </tr>
+                  <tr onclick="row3()">
+                    <td class="">2020 - 2021 Bahar</td>
+                    <td class="">2</td>
+                    <td class="">Süresi İçinde</td>
+                    <td class="">Kayıtlı</td>
+                    <td class="">İngilizce Hazırlık</td>
+                    <td class="">B2</td>
+                    <td class=""></td>
+                    <td class=""></td>
+                  </tr>
+                  <tr onclick="row4()">
+                    <td class="">2020 - 2021 Güz</td>
+                    <td class="">1</td>
+                    <td class="">Süresi İçinde</td>
+                    <td class="">Kayıtlı</td>
+                    <td class="">İngilizce Hazırlık</td>
+                    <td class="">B1</td>
+                    <td class=""></td>
+                    <td class=""></td>
+                  </tr>
+                </table>
+        </div>
+    </div>
+    <div class="bolge">
+        <div class="baslik">
+            <div class="solBaslik">
+                <div class="icon">
+                    <i class="fa-solid fa-table-cells"></i>
+                </div>
+                <div>
+                    Dersler ve Notlar
+                </div>
+            </div>
+        </div>
+        <div class="tabloBaslik">
+            <table class="t2">
+                  <tr>
+                    <td class="">Dönem Parçası</td>
+                    <td class="">Düzey</td>
+                    <td class="">Konu</td>
+                    <td class="">Ders No</td>
+                    <td class="">Şube No</td>
+                    <td class="">Kredi</td>
+                    <td class="">Başarı Notu</td>
+                    <td class="">Tekrar Edilen Dönem</td>
+                    <td class="">Başarı Notu Tarihçesi</td>
+                    <td class="">Grade Book</td>
+                    <td class="">Devamsızlık</td>
+                  </tr>
+                </table>
+        </div>
+        <div>
+            <iframe class="pencere" src="2021-2022Bahar.html" id="pencere"></iframe>
+        </div>
+    </div>
+    <div class="ucuncuBolge">
+        <div class="col-md-7">
+            <div class="bolge altBolge">
+                <div class="baslik">
+                    <div class="solBaslik">
+                        <div class="icon">
+                            <i class="fa-solid fa-table-cells"></i>
+                        </div>
+                        <div>
+                            Toplam Kredi ve Puan
+                        </div>
+                    </div>
+                </div>
+                <div class="tabloBaslik solAltBaslik">
+                    <table class="">
+                          <tr>
+                            <td class=""></td>
+                            <td class=""></td>
+                            <td class="">Alınan Kredi</td>
+                            <td class="">Tamamlanan Kredi</td>
+                            <td class="">Not Ortalamasına Sayılan Kredi</td>
+                            <td class="">Puan</td>
+                            <td class="">Not Ortalaması</td>
+                          </tr>
+                        </table>
+                </div>
+                <div>
+                    <iframe class="pencere2" src="2021-2022Bahar2.html" id="pencere2"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <h4 id="bir">Başarı Sırası</h4>
+            <p id="siralama">
+                Lisans programları öğrencileri arasında 6104 öğrenci içinde <b>6002</b>. <br>
+                Hukuk Fakültesi öğrencileri içinde 864 öğrenci arasında <b>855</b>. <br>
+                Hukuk Lisans öğrencileri içinde 864 öğrenci arasında <b>855</b>. <br>
+               <i>En Son Güncellenme: <i id="tarih"></i></i>
+            </p>
+        </div>
+    </div>
+    <div id="notEkran" class="notEkran">
+        <div class="d-flex flex-row-reverse">
+            <i class="fa-solid fa-square-xmark close" onclick="hideNotEkran()"></i>
+        </div>
+        <div class="bolge bg-white" style="height:300px ;">
+            <div class="baslik">
+                <div class="solBaslik">
+                    <div class="icon">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </div>
+                    <div>
+                        <b>Grade History</b> 
+                    </div>
+                </div>
+            </div>
+            <div class="tabloBaslik">
+                <table class="">
+                      <tr>
+                        <td class="">Tarih ve Zaman</td>
+                        <td class="">Başarı Notu</td>
+                      </tr>
+                    </table>
+            </div>
+            <div class="">
+                <table class="icerikTablosu2">
+                      <tr>
+                        <td id="11" class=""></td>
+                        <td id="12" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="21" class=""></td>
+                        <td id="22" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="31" class=""></td>
+                        <td id="32" class=""></td>
+                      </tr>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <div id="gradeBook" class="gradeBook">
+        <div class="d-flex flex-row-reverse">
+            <i class="fa-solid fa-square-xmark close" onclick="hideGradeBook()"></i>
+        </div>
+        <div class="bolge bg-white" style="height:300px ;">
+            <div class="baslik">
+                <div class="solBaslik">
+                    <div class="icon">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </div>
+                    <div>
+                        <b>Grade Book</b> 
+                    </div>
+                </div>
+            </div>
+            <div class="tabloBaslik">
+                <table class="">
+                      <tr>
+                        <td class="">Bileşen Adı</td>
+                        <td class="">Başarı Notu</td>
+                        <td class="">Yes/No</td>
+                      </tr>
+                    </table>
+            </div>
+            <div class="">
+                <table class="icerikTablosu3">
+                      <tr>
+                        <td id="2.11" class=""></td>
+                        <td style="text-align: right;" id="2.12" class=""></td>
+                        <td id="2.13" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.21" class=""></td>
+                        <td style="text-align: right;" id="2.22" class=""></td>
+                        <td id="2.23" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.31" class=""></td>
+                        <td style="text-align: right;" id="2.32" class=""></td>
+                        <td id="2.33" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.41" class=""></td>
+                        <td style="text-align: right;" id="2.42" class=""></td>
+                        <td id="2.43" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.51" class=""></td>
+                        <td style="text-align: right;" id="2.52" class=""></td>
+                        <td id="2.53" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.61" class=""></td>
+                        <td style="text-align: right;" id="2.62" class=""></td>
+                        <td id="2.63" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.71" class=""></td>
+                        <td style="text-align: right;" id="2.72" class=""></td>
+                        <td id="2.73" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.81" class=""></td>
+                        <td style="text-align: right;" id="2.82" class=""></td>
+                        <td id="2.83" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.91" class=""></td>
+                        <td style="text-align: right;" id="2.92" class=""></td>
+                        <td id="2.93" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.101" class=""></td>
+                        <td style="text-align: right;" id="2.102" class=""></td>
+                        <td id="2.103" class=""></td>
+                      </tr>
+                      <tr>
+                        <td id="2.111" class=""></td>
+                        <td style="text-align: right;" id="2.112" class=""></td>
+                        <td id="2.113" class=""></td>
+                      </tr>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("load", function(){
+
+        });
+        window.onload = function() {
+          var today = new Date();
+          var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+          document.getElementById('tarih').innerHTML = date;
+        };
+        function row1() {
+            document.getElementById('pencere').src = "2021-2022Bahar.html";
+            document.getElementById('pencere2').src = "2021-2022Bahar2.html";
+            document.getElementById('bir').innerHTML="Başarı Sırası";
+
+            var today = new Date();
+            var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+            document.getElementById('siralama').innerHTML="Lisans programları öğrencileri arasında 6104 öğrenci içinde <b>1364</b>. <br>Hukuk Fakültesi öğrencileri içinde 864 öğrenci arasında <b>73</b>. <br>Hukuk Lisans öğrencileri içinde 864 öğrenci arasında <b>70</b>. <br><i>En Son Güncellenme: </i>" + date;
+
+        }
+        function row2() {
+            document.getElementById('pencere').src = "2021-2022Guz.html";
+            document.getElementById('pencere2').src = "2021-2022Guz2.html";
+            document.getElementById('bir').innerHTML="Başarı Sırası";
+
+            var today = new Date();
+            var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+            document.getElementById('siralama').innerHTML="Lisans programları öğrencileri arasında 6354 öğrenci içinde <b>1940</b>. <br>Hukuk Fakültesi öğrencileri içinde 916 öğrenci arasında <b>95</b>. <br>Hukuk Lisans öğrencileri içinde 916 öğrenci arasında <b>93</b>. <br><i>En Son Güncellenme: </i>" + date;
+        }
+        function row3() {
+            document.getElementById('pencere').src = "2020-2021Bahar.html";
+            document.getElementById('pencere2').src = "2020-2021Bahar2.html";
+            document.getElementById('bir').innerHTML="";
+            document.getElementById('siralama').innerHTML="";
+        }
+        function row4() {
+            document.getElementById('pencere').src = "2020-2021Guz.html";
+            document.getElementById('pencere2').src = "2020-2021Guz2.html";
+            document.getElementById('bir').innerHTML="";
+            document.getElementById('siralama').innerHTML="";
+        }
+        function hideNotEkran(){
+            document.getElementById("notEkran").style.visibility = "hidden";
+            document.getElementById("11").innerHTML='';
+            document.getElementById("12").innerHTML='';
+            document.getElementById("21").innerHTML='';
+            document.getElementById("22").innerHTML='';
+            document.getElementById("31").innerHTML='';
+            document.getElementById("32").innerHTML='';
+
+        }
+        function hideGradeBook(){
+            document.getElementById("gradeBook").style.visibility = "hidden";
+            document.getElementById("2.11").innerHTML='';
+            document.getElementById("2.12").innerHTML='';
+            document.getElementById("2.13").innerHTML='';
+            document.getElementById("2.21").innerHTML='';
+            document.getElementById("2.22").innerHTML='';
+            document.getElementById("2.23").innerHTML='';
+            document.getElementById("2.31").innerHTML='';
+            document.getElementById("2.32").innerHTML='';
+            document.getElementById("2.33").innerHTML='';
+            document.getElementById("2.41").innerHTML='';
+            document.getElementById("2.42").innerHTML='';
+            document.getElementById("2.43").innerHTML='';
+            document.getElementById("2.51").innerHTML='';
+            document.getElementById("2.52").innerHTML='';
+            document.getElementById("2.53").innerHTML='';
+            document.getElementById("2.61").innerHTML='';
+            document.getElementById("2.62").innerHTML='';
+            document.getElementById("2.63").innerHTML='';
+            document.getElementById("2.71").innerHTML='';
+            document.getElementById("2.72").innerHTML='';
+            document.getElementById("2.73").innerHTML='';
+            document.getElementById("2.81").innerHTML='';
+            document.getElementById("2.82").innerHTML='';
+            document.getElementById("2.83").innerHTML='';
+            document.getElementById("2.91").innerHTML='';
+            document.getElementById("2.92").innerHTML='';
+            document.getElementById("2.93").innerHTML='';
+            document.getElementById("2.101").innerHTML='';
+            document.getElementById("2.102").innerHTML='';
+            document.getElementById("2.103").innerHTML='';
+            document.getElementById("2.111").innerHTML='';
+            document.getElementById("2.112").innerHTML='';
+            document.getElementById("2.113").innerHTML='';
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
